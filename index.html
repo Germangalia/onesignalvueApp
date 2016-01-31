@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <title>onesignalvueApp</title>
 
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>
+      var OneSignal = OneSignal || [];
+      OneSignal.push(["init", {
+        appId: "342955ce-d2f8-4e33-b801-df9ef3541a7b",
+        subdomainName: 'germangalia'
+      }]);
+    </script>
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   </head>
   <body>
@@ -21,12 +32,23 @@
         </div>
 
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-default">Send Message!</button>
+          <a href="#" id="subscribe-link">Send Message!</a>
         </div>
       </div>
 
 
     </app>
+
+    <script>
+      // This example assumes you've already initialized OneSignal
+      function subscribe() {
+        OneSignal.push(["registerForPushNotifications"]);
+        event.preventDefault();
+      }
+      document.getElementById("subscribe-link").addEventListener('click', subscribe);
+      });
+    </script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="dist/build.js"></script>
   </body>
