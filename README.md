@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # onesignalvueApp
 
 > A Vue.js project
@@ -22,3 +23,6 @@ npm test
 ```
 
 For more information see the [docs for vueify](https://github.com/vuejs/vueify).
+=======
+# onesignalvueApp
+>>>>>>> 52714adbffc35c49b9b90ac7d736f5a49370acaa
